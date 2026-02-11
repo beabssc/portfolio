@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="contacto.html">
   <title>Beatriz Siguero - Portfolio</title>
+
   <style>
     /* Reset */
     * {
@@ -14,6 +14,7 @@
     }
 
     body {
+      position: relative;
       font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #b9b4e6;
       color: #222;
@@ -48,6 +49,13 @@
       margin-bottom: 3rem;
     }
 
+    h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      color: #333;
+    }
+
     .skills, .tools {
       display: flex;
       flex-wrap: wrap;
@@ -65,13 +73,6 @@
       user-select: none;
     }
 
-    h2 {
-      font-weight: 700;
-      margin-bottom: 1rem;
-      font-size: 1.6rem;
-      color: #333;
-    }
-
     .projects {
       display: flex;
       flex-direction: column;
@@ -84,6 +85,7 @@
       padding: 1.3rem 1.5rem;
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
       transition: box-shadow 0.3s ease;
+      background: #fff;
     }
 
     .project-card:hover {
@@ -119,23 +121,39 @@
     a:hover {
       text-decoration: underline;
     }
-    img{
-        position: absolute;
-        top: 8%;
-        right: 18%;     
-    max-width: 30vw;
-    max-height: 30vh;
-    border-radius: 50%;
-    
+
+    img {
+      position: absolute;
+      top: 2rem;
+      right: -150px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      img {
+        position: static;
+        display: block;
+        margin: 0 auto 2rem auto;
+      }
+
+      header {
+        text-align: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>Beatriz Siguero</h1>
-    <p>Multi-plataform application design & DEV</p>
+    <p>Multi-platform application design & DEV</p>
   </header>
+
   <img src="IMG_20221109_234637.jpg" alt="Foto de Beatriz">
 
   <section>
@@ -144,9 +162,18 @@
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript</div>
+      <div class="skill">Angular</div>
+      <div class="skill">React</div>
+
       <div class="skill">Java</div>
       <div class="skill">C#</div>
-      <div class="skill">React</div>
+      <div class="skill">Spring</div>
+      <div class="skill">Kotlin</div>
+
+      <div class="skill">MySQL</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">Oracle Database</div>
+
       <div class="skill">Accessibility</div>
     </div>
   </section>
@@ -155,12 +182,19 @@
     <h2>Tools</h2>
     <div class="tools">
       <div class="tool">VS Code</div>
-      <div class="tool">Git</div>
-      <div class="tool">Figma</div>
-      <div class="tool">Chrome DevTools</div>
+      <div class="tool">IntelliJ</div>
       <div class="tool">Eclipse</div>
-      <div class="tool">Netbeans</div>
+      <div class="tool">NetBeans</div>
+      <div class="tool">Android Studio</div>
+      <div class="tool">Unity</div>
+
+      <div class="tool">Git</div>
       <div class="tool">GitHub</div>
+
+      <div class="tool">Figma</div>
+      <div class="tool">Postman</div>
+      <div class="tool">Chrome DevTools</div>
+      <div class="tool">WordPress</div>
     </div>
   </section>
 
@@ -168,24 +202,37 @@
     <h2>Projects</h2>
     <div class="projects">
       <article class="project-card">
-        <a href="https://beatrizsiguero.github.io/"><h3>Studio Ghibli</h3></a>
+        <a href="https://beatrizsiguero.github.io/">
+          <h3>Studio Ghibli</h3>
+        </a>
         <p>Website about the animation studio, its most awarded works and its history.</p>
       </article>
+
       <article class="project-card">
-        <a href="https://beatrizsiguero.github.io/cobendai.github.io/"><h3>Cobendai</h3></a>
-        <p>Internships for Hyundai Spain, showcasing its electric models. To apply for a test drive</p>
+        <a href="https://beatrizsiguero.github.io/cobendai.github.io/">
+          <h3>Cobendai</h3>
+        </a>
+        <p>Internships for Hyundai Spain, showcasing its electric models. To apply for a test drive.</p>
       </article>
+
       <article class="project-card">
-        <a href="Hyundai Access Beatriz.pdf"><h3>Accessible Hyundai Website</h3></a>
+        <a href="Hyundai Access Beatriz.pdf">
+          <h3>Accessible Hyundai Website</h3>
+        </a>
         <p>A review focusing on accessibility and design.</p>
       </article>
     </div>
   </section>
-<section>
-  <a href="contacto.html"><h4>Contact</h4></a>
-</section>
+
+  <section>
+    <a href="contacto.html"><h4>Contact</h4></a>
+  </section>
+
   <footer>
-    <p>© 2025 Beatriz Siguero. Visit bea.bssc@gmail.com<a href="bea.bssc@gmail.com" target="_blank"></a></p>
+    <p>
+      © 2025 Beatriz Siguero · 
+      <a href="mailto:bea.bssc@gmail.com">bea.bssc@gmail.com</a>
+    </p>
   </footer>
 
 </body>
